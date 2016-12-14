@@ -1,6 +1,14 @@
 package linenoise
 
+import (
+	"fmt"
+)
+
 type LineNoise struct {
+}
+
+func New() *LineNoise {
+	return &LineNoise{}
 }
 
 type CompletionCallback func(line string, cpl *Completion)
@@ -52,7 +60,7 @@ func (l *LineNoise) SetHintsCallback(cb HintsCallback) {
 
 // Clear clears the screen.
 func (l *LineNoise) Clear() {
-
+	fmt.Print("\033[H\033[2J")
 }
 
 type Completion struct {
