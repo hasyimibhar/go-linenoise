@@ -1,0 +1,22 @@
+{
+	"ImportPath": "github.com/hasyimibhar/go-linenoise",
+	"GoVersion": "go1.7",
+	"GodepVersion": "v74",
+	"Packages": [
+		"./..."
+	],
+	"Deps": [
+		{
+			"ImportPath": "github.com/creack/termios/raw",
+			"Rev": "88d0029e36a108c959d6f8fc63c393f591b0302b"
+		},
+		{
+			"ImportPath": "github.com/mattn/go-isatty",
+			"Rev": "56b76bdf51f7708750eac80fa38b952bb9f32639"
+		},
+		{
+			"ImportPath": "golang.org/x/sys/unix",
+			"Rev": "7a56174f0086b32866ebd746a794417edbc678a1"
+		}
+	]
+}
